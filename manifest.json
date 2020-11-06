@@ -1,5 +1,5 @@
 {
-    "name" : "paimeng",
+    "name" : "派盟",
     "appid" : "__UNI__98C101F",
     "description" : "",
     "versionName" : "1.0.0",
@@ -12,7 +12,7 @@
         "compilerVersion" : 3,
         "splashscreen" : {
             "alwaysShowBeforeRender" : true,
-            "waiting" : true,
+            "waiting" : false,
             "autoclose" : true,
             "delay" : 0
         },
@@ -50,7 +50,31 @@
             /* ios打包配置 */
             "ios" : {},
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/logo/appIcon.png",
+                    "xhdpi" : "unpackage/logo/appIcon.png",
+                    "xxhdpi" : "unpackage/logo/appIcon.png",
+                    "xxxhdpi" : "unpackage/logo/appIcon.png"
+                },
+                "ios" : {
+                    "iphone" : {
+                        "notification@2x" : "unpackage/logo/appIcon.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "default",
+                "android" : {
+                    "hdpi" : "static/name4.png",
+                    "xhdpi" : "static/name4.png",
+                    "xxhdpi" : "static/name4.png"
+                },
+                "iosStyle" : "default"
+            }
         }
     },
     /* 快应用特有相关 */

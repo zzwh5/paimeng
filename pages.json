@@ -12,7 +12,9 @@
 		{
 			"path": "pages/setting/settingng",
 			"style": {
-				"navigationBarTitleText": "设置"
+				// "navigationBarTitleText": "二维码设置"
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
 			}
 		}
 	],
