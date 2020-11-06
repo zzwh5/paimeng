@@ -7,7 +7,7 @@
 			
 		</view>
 		<view class="button">
-			<u-button type="primary" size = "mini">点击设置</u-button>
+			<u-button type="primary" size = "mini" @tap="goSetting">点击设置</u-button>
 		</view>
 	</view>
 </template>
@@ -36,12 +36,10 @@
 
 		},
 		methods: {
-			tel(){
-				uni.scanCode({
-					success:function(res){
-						console.log(JSON.stringify(res.result));
-					}
-				});
+			goSetting(){
+				uni.navigateTo({
+					url:'../setting/settingng'
+				})
 			}
 		}
 	}
