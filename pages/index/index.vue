@@ -64,8 +64,11 @@
 		.content_bot{
 			position: absolute;
 			bottom: 16rpx;
+			left: 0;
+			right: 0;
+			margin: auto;
 			width: calc(100vw - 30px);
-			margin: 0 15rpx;
+			// margin: 0 15rpx;
 			padding: 15rpx;
 			box-sizing: border-box;
 			border-radius: 10rpx;
