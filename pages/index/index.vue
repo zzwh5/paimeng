@@ -1,13 +1,18 @@
 <template>
 	<view class="content">
-		<view class="swiper">
-			<u-swiper :list="list" effect3d></u-swiper>
+		<view class="advertising">
+			<image src="../../static/index/index_bg.png" mode=""></image>
 		</view>
-		<view class="ewm">
-			
-		</view>
-		<view class="button">
-			<u-button type="primary" size = "mini" @tap="goSetting">点击设置</u-button>
+		<view class="content_bot">
+			<view class="qrcode">
+				<image src="../../static/index/index_bg.png" mode=""></image>
+			</view>
+			<view class="scan">
+				<image src="../../static/index/scan.png" mode=""></image>
+				<view>
+					当前为{{ payMethod }}收款码
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -16,48 +21,91 @@
 	export default {
 		data() {
 			return {
-				list: [
-					{
-						image: 'https://cdn.uviewui.com/uview/swiper/1.jpg',
-						title: '昨夜星辰昨夜风，画楼西畔桂堂东'
-					},
-					{
-						image: 'https://cdn.uviewui.com/uview/swiper/2.jpg',
-						title: '身无彩凤双飞翼，心有灵犀一点通'
-					},
-					{
-						image: 'https://cdn.uviewui.com/uview/swiper/3.jpg',
-						title: '谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳'
-					}
-				],
+				// 广告数据
+				advData: [],
+				payMethod: '支付宝'
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-			goSetting(){
-				uni.navigateTo({
-					url:'../setting/settingng'
-				})
-			}
+			//  请求广告数据
+			// getAdvData(){
+			// 	var that = this
+			// 	uni.request({
+			// 		url: '',
+			// 		data: 
+			// 	})
+			// }
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
 	.content{
-		.ewm{
+		height: 100vh;
+		width: 100vw;
+		position: relative;
+		box-sizing: border-box;
+		overflow: hidden;
+		.advertising{
+			position: absolute;
+			left: 0;
+			top: 0;
 			width: 100%;
-			height: 750rpx;
-			margin-top: 20rpx;
-			background: #00c6ff;  /* fallback for old browsers */
-			background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-			border-radius: 20rpx;
+			height: 100%;
+			&>image{
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
 		}
-		.button{
-			margin-top: 20rpx;
+		.content_bot{
+			position: absolute;
+			bottom: 16rpx;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: calc(100vw - 30px);
+			// margin: 0 15rpx;
+			padding: 15rpx;
+			box-sizing: border-box;
+			border-radius: 10rpx;
+			background: rgba(0,0,0, .3);
+			overflow: hidden;
+			display: flex;
+			flex-direction: row;
+			.qrcode{
+				width: 287rpx;
+				height: 287rpx;
+				padding: 10rpx;
+				box-sizing: border-box;
+				background-color: #fff;
+				&>image{
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.scan{
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				&>image{
+					display: block;
+					width: 207rpx;
+					height: 106rpx;
+				}
+				&>view{
+					font-size: 30rpx;
+					color: #FFFFFF;
+					font-family: PingFang SC Medium, PingFang SC Medium-Medium;
+					font-weight: bold;
+				}
+			}
 		}
 	}
 </style>
