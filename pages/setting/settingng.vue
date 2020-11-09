@@ -1,9 +1,9 @@
 <template>
 	<view class="setting" :style="{'background':'url('+bg+')'}">
 		<view class="header">
-			<view class="img">
+			<!-- <view class="img">
 				<image src="../../static/setting/back.png" mode=""></image>
-			</view>
+			</view> -->
 			二维码设置
 		</view>
 		<view class="content">
@@ -130,11 +130,17 @@
 							return false
 						}
 						that.ewm = res.result
-						sessionStorage.setItem('type',text)
-						sessionStorage.setItem('ewm', res.result)
+						uni.setStorage({
+						    key: 'type',
+						    data: text
+						});
+						uni.setStorage({
+						    key: 'ewm',
+						    data: res.result
+						});
 						// 然后调用生成二维码的函数 生成对应的二维码
 						that.make()
-					}   
+					}
 				});
 			},
 			// 点击生成 二维码
@@ -148,6 +154,17 @@
 					colorDark: "#333333",
 					colorLight: "#FFFFFF",
 					correctLevel: drawQrcode.CorrectLevel.H
+				})
+				uni.showToast({
+					title:'设置成功',
+					icon:'success',
+					success() {
+						setTimeout(()=>{
+							uni.redirectTo({
+								url: '../index/index'
+							});
+						},1000)
+					}
 				})
 			}
 		}

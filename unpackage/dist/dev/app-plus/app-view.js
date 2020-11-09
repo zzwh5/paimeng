@@ -1286,50 +1286,35 @@ var render = function() {
     "v-uni-view",
     { staticClass: _vm._$g(0, "sc"), style: _vm._$g(0, "s"), attrs: { _i: 0 } },
     [
+      _c("v-uni-view", { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } }, [
+        _vm._v("二维码设置")
+      ]),
       _c(
         "v-uni-view",
-        { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
+        { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
         [
           _c(
             "v-uni-view",
-            { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
-            [
-              _c("v-uni-image", {
-                attrs: { src: _vm._$g(3, "a-src"), mode: "", _i: 3 }
-              })
-            ],
-            1
-          ),
-          _vm._v("二维码设置")
-        ],
-        1
-      ),
-      _c(
-        "v-uni-view",
-        { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
-        [
-          _c(
-            "v-uni-view",
-            { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
+            { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
             [
               _c(
                 "v-uni-view",
                 {
-                  staticClass: _vm._$g(6, "sc"),
-                  style: _vm._$g(6, "s"),
-                  attrs: { _i: 6 }
+                  staticClass: _vm._$g(4, "sc"),
+                  style: _vm._$g(4, "s"),
+                  attrs: { _i: 4 }
                 },
                 [_vm._v("选择二维码终端")]
               ),
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(7, "sc"), attrs: { _i: 7 } },
+                { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
                 [
                   _c(
                     "v-uni-view",
                     {
-                      staticClass: _vm._$g(8, "sc"),
-                      attrs: { _i: 8 },
+                      staticClass: _vm._$g(6, "sc"),
+                      attrs: { _i: 6 },
                       on: {
                         click: function($event) {
                           return _vm.$handleViewEvent($event)
@@ -1338,19 +1323,17 @@ var render = function() {
                     },
                     [
                       _c("v-uni-image", {
-                        attrs: { src: _vm._$g(9, "a-src"), mode: "", _i: 9 }
+                        attrs: { src: _vm._$g(7, "a-src"), mode: "", _i: 7 }
                       }),
-                      _c("v-uni-text", { attrs: { _i: 10 } }, [
-                        _vm._v("支付宝")
-                      ])
+                      _c("v-uni-text", { attrs: { _i: 8 } }, [_vm._v("支付宝")])
                     ],
                     1
                   ),
                   _c(
                     "v-uni-view",
                     {
-                      staticClass: _vm._$g(11, "sc"),
-                      attrs: { _i: 11 },
+                      staticClass: _vm._$g(9, "sc"),
+                      attrs: { _i: 9 },
                       on: {
                         click: function($event) {
                           return _vm.$handleViewEvent($event)
@@ -1359,9 +1342,9 @@ var render = function() {
                     },
                     [
                       _c("v-uni-image", {
-                        attrs: { src: _vm._$g(12, "a-src"), mode: "", _i: 12 }
+                        attrs: { src: _vm._$g(10, "a-src"), mode: "", _i: 10 }
                       }),
-                      _c("v-uni-text", { attrs: { _i: 13 } }, [_vm._v("微信")])
+                      _c("v-uni-text", { attrs: { _i: 11 } }, [_vm._v("微信")])
                     ],
                     1
                   )
@@ -1373,10 +1356,10 @@ var render = function() {
           ),
           _c(
             "v-uni-view",
-            { staticClass: _vm._$g(14, "sc"), attrs: { _i: 14 } },
+            { staticClass: _vm._$g(12, "sc"), attrs: { _i: 12 } },
             [
               _c("v-uni-image", {
-                attrs: { src: _vm._$g(15, "a-src"), mode: "", _i: 15 }
+                attrs: { src: _vm._$g(13, "a-src"), mode: "", _i: 13 }
               })
             ],
             1
@@ -1384,29 +1367,29 @@ var render = function() {
           _c(
             "v-uni-view",
             {
-              staticClass: _vm._$g(16, "sc"),
-              style: _vm._$g(16, "s"),
-              attrs: { _i: 16 }
+              staticClass: _vm._$g(14, "sc"),
+              style: _vm._$g(14, "s"),
+              attrs: { _i: 14 }
             },
             [
               _c(
                 "v-uni-view",
                 {
-                  staticClass: _vm._$g(17, "sc"),
-                  attrs: { id: "img", _i: 17 }
+                  staticClass: _vm._$g(15, "sc"),
+                  attrs: { id: "img", _i: 15 }
                 },
                 [
                   _c("v-uni-canvas", {
-                    style: _vm._$g(18, "s"),
-                    attrs: { "canvas-id": "qrcode", _i: 18 }
+                    style: _vm._$g(16, "s"),
+                    attrs: { "canvas-id": "qrcode", _i: 16 }
                   })
                 ],
                 1
               ),
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(19, "sc"), attrs: { _i: 19 } },
-                [_vm._v("您的" + _vm._$g(19, "t0-0") + "二维码")]
+                { staticClass: _vm._$g(17, "sc"), attrs: { _i: 17 } },
+                [_vm._v("您的" + _vm._$g(17, "t0-0") + "二维码")]
               )
             ],
             1
@@ -1558,7 +1541,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 10);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*每个页面公共css */\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*每个页面公共css */\n", ""]);
 // Exports
 module.exports = exports;
 
