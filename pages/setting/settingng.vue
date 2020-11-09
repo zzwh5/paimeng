@@ -1,11 +1,8 @@
 <template>
 	<view class="setting" :style="{'background':'url('+bg+')'}">
-		<view class="header">
-			<!-- <view class="img">
-				<image src="../../static/setting/back.png" mode=""></image>
-			</view> -->
+		<!-- <view class="header">
 			二维码设置
-		</view>
+		</view> -->
 		<view class="content">
 			<!-- 选择微信或者支付宝 -->
 			<view class="change">
