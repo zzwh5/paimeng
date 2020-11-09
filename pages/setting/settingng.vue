@@ -1,11 +1,11 @@
 <template>
 	<view class="setting" :style="{'background':'url('+bg+')'}">
-		<view class="header">
+		<!-- <view class="header"> -->
 			<!-- <view class="img">
 				<image src="../../static/setting/back.png" mode=""></image>
 			</view> -->
-			二维码设置
-		</view>
+			<!-- 二维码设置 -->
+		<!-- </view> -->
 		<view class="content">
 			<!-- 选择微信或者支付宝 -->
 			<view class="change">
@@ -178,7 +178,7 @@
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		box-sizing: border-box;
-		padding-top: calc(var(--status-bar-height) + 41rpx) ;
+		// padding-top: calc(var(--status-bar-height) + 41rpx) ;
 		.header{
 			display: flex;
 			align-items: center;
@@ -199,7 +199,8 @@
 			}
 		}
 		.content{
-			margin-top: 52rpx;
+			// margin-top: 52rpx;
+			padding-top: 30rpx;
 			.change{
 				.title{
 					width: 279rpx;
